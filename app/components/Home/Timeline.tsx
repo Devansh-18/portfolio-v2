@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import { experience } from "../../../lib/timelineData";
 
@@ -10,10 +9,10 @@ export default function Timeline() {
         
         <div key={id} className="relative group rounded-2xl p-[1px] overflow-hidden">
           
-          {/* 🔥 Rotating Border */}
+       
           <div className="absolute inset-0 rounded-2xl rotating-border opacity-70 group-hover:opacity-100 transition duration-500"></div>
 
-          {/* 💎 Card */}
+          
           <div className="relative rounded-2xl overflow-hidden 
             bg-[#0b0f1a]/80 backdrop-blur-xl 
             border border-white/10 
@@ -24,12 +23,10 @@ export default function Timeline() {
 
             <div className="relative z-10 p-8 shimmer">
               
-              {/* Year */}
               <div className="absolute top-8 right-8 text-sm text-blue-400 tracking-wide">
                 {exp.year}
               </div>
 
-              {/* Logo + Info */}
               <div className="flex flex-wrap items-start gap-4 mb-4">
                 <Image
                   src={exp.logo}
@@ -62,7 +59,6 @@ export default function Timeline() {
                 </div>
               </div>
 
-              {/* Courses */}
               <div className="flex flex-wrap gap-2 mt-4">
                 {exp.Courses.map((course, i) => (
                   <span
@@ -79,7 +75,6 @@ export default function Timeline() {
                 ))}
               </div>
 
-              {/* Activities */}
               <ul className="mt-4 space-y-2 text-sm text-pink-300">
                 {exp.coCurricular.map((activity, i) => (
                   <li key={i} className="flex items-start gap-3">

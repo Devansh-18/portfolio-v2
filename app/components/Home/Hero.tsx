@@ -1,16 +1,13 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import profile from "../../../public/devansh.jpeg";
 import Image from "next/image";
 import India from "../../../public/india.svg";
 import { links } from "../../../lib/contactData";
 import { motion } from "framer-motion";
-import IntroText from "../ui/IntroText";
 import { FileDown } from "lucide-react";
-import { Tiles } from "../ui/tiles";
 import { ShinyButton } from "../ui/shiny-button";
 import { Boxes } from "../ui/home-bg";
-import { cn } from "@/lib/utils";
 
 const RESUME_LINK = process.env.NEXT_PUBLIC_RESUME_LINK;
 
@@ -22,11 +19,11 @@ function page() {
   }, []);
   return (
     <>
-      <div className="h-96 relative w-full min-h-screen overflow-hidden flex flex-col items-center justify-center rounded-lg">
+      <div className="  relative w-full min-h-screen overflow-hidden flex flex-col items-center justify-center rounded-lg">
         <div className="absolute inset-0 w-full min-h-screen  z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
         <Boxes />
-        <div className="relative z-10 flex md:flex-nowrap flex-wrap-reverse justify-center gap-10 w-[80%] sm:w-[80%] md:w-[75vw] mx-auto mt-12">
+        <div className="relative  z-10 flex md:flex-nowrap flex-wrap-reverse justify-center gap-10 w-[80%] sm:w-[80%] md:w-[75vw] mx-auto mt-28 md:mt-12">
           <div className="w-full">
             <p className="text-4xl text-white font-semibold">
               Hi, I am Devansh!{" "}
@@ -73,7 +70,7 @@ function page() {
             <Image
               alt="Profile Photo"
               src={profile}
-              className="rounded-xl sm:w-[28vw] shadow-[0_20px_60px_-20px_rgba(255,215,0,0.25)]"
+              className="rounded-xl h-auto sm:w-[28vw] shadow-[0_20px_60px_-20px_rgba(255,215,0,0.25)]"
               width={450}
               height={450}
             />

@@ -6,7 +6,6 @@ export default function Footer() {
     <footer className="mt-32 border-t border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
         
-        {/* Left */}
         <div>
           <h2 className="text-xl font-semibold text-white mb-4">
             Devansh Dubey
@@ -17,7 +16,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Center */}
         <div>
           <h3 className="text-sm text-blue-400 mb-4 tracking-widest">
             NAVIGATION
@@ -29,7 +27,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Right */}
         <div>
           <h3 className="text-sm text-blue-400 mb-4 tracking-widest">
             CONNECT
@@ -53,7 +50,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom */}
       <div className="border-t border-white/10 py-6 px-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
         <p>© 2026 Devansh Dubey. Built with Next.js</p>
         <p className="mt-2 md:mt-0">

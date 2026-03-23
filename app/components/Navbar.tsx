@@ -45,12 +45,10 @@ function Navbar() {
   transition-transform duration-300
   ${showNav ? "translate-y-0" : "-translate-y-[150%]"}`}
 >
-      {/* Glass Container */}
       <div className="bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 
 shadow-[0_8px_30px_rgba(0,0,0,0.4)] 
 rounded-full px-8 py-4 
 flex items-center justify-between sm:justify-center gap-8">
-        {/* Desktop Links */}
         <div className="hidden sm:flex md:flex  items-center gap-10 text-md font-medium">
           {links.map((link) => {
             const isActive = pathname === link.href;
@@ -65,7 +63,6 @@ flex items-center justify-between sm:justify-center gap-8">
                   {link.name}
                 </span>
 
-                {/* Animated Underline */}
                 <span
                   className={`absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left transition-transform duration-300 ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
                 />
@@ -74,8 +71,6 @@ flex items-center justify-between sm:justify-center gap-8">
           })}
         </div>
 
-        {/* Mobile Instagram Style */}
-  {/* Mobile Instagram Dock */}
         <div className="flex sm:hidden items-center justify-between gap-8 ">
           {links.map((link) => {
             const isActive = pathname === link.href;
@@ -90,7 +85,6 @@ flex items-center justify-between sm:justify-center gap-8">
                   {link.name}
                 </span>
 
-                {/* Animated Underline */}
                 <span
                   className={`absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left transition-transform duration-300 ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
                 />

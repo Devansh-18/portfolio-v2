@@ -50,7 +50,6 @@ export default function Contact() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6  pb-12 grid md:grid-cols-2 sm:gap-16 gap-4 items-center">
 
-        {/* Left Side Content */}
         <div>
           <p className="text-blue-400 uppercase tracking-widest text-sm mb-4">
             Let’s Build Something
@@ -66,7 +65,6 @@ export default function Contact() {
         
                </div>
 
-        {/* Form Card */}
         <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-3xl shadow-2xl">
 
           <form onSubmit={handleSubmit} className="space-y-6">

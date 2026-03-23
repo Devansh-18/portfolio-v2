@@ -11,10 +11,8 @@ export const CardWithGridEllipsis = ({
 }) => (
   <div className="relative rounded-xl h-32 p-[1px] overflow-hidden">
 
-    {/* 🔥 animated border */}
     <div className="absolute inset-0 rotating-border op0 group-hover:opacity-100 transition duration-500"></div>
 
-    {/* 💎 card */}
     <div className="relative rounded-xl 
       bg-zinc-950/80 backdrop-blur-xl 
       border border-white/10 
@@ -23,7 +21,6 @@ export const CardWithGridEllipsis = ({
       group-hover:shadow-[0_0_25px_rgba(59,130,246,0.3)]
     ">
 
-      {/* grid bg */}
       <div
         style={{ backgroundImage: `url(${bg.src})` }}
         className="size-full bg-repeat bg-[length:25px_25px]"
@@ -52,13 +49,13 @@ export const CardBody = ({
       className
     )}
   >
-    <Image
-      src={icon}
-      width={35}
-      height={35}
-      alt={title}
-      className="mb-3 transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)]"
-    />
+  <Image
+  src={icon}
+  alt={title}
+  width={35}
+  height={35}
+  className="w-9 h-9 mb-3 transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)]"
+/>
 
     <p className="text-sm text-gray-300 group-hover:text-white transition">
       {title}
