@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 const LEETCODE_URL = "https://leetcode.com/u/devansh_dubey/";
 
 type LeetCodeStats = {
@@ -185,18 +186,18 @@ function DSA() {
                       key={item.label}
                       className="relative rounded-xl overflow-hidden group"
                     >
-                      
+
                       <div
                         className={`absolute inset-0 bg-gradient-to-r ${item.color} opacity-10`}
                       ></div>
 
-                    
+
                       <div
                         style={{ width: `${percent}%` }}
                         className={`absolute inset-y-0 left-0 bg-gradient-to-r ${item.color} opacity-30 transition-all duration-700`}
                       ></div>
 
-                    
+
                       <div className="relative flex justify-between items-center px-5 py-4 
                       border border-white/10 rounded-xl backdrop-blur-md">
                         <span className="text-white font-medium">
@@ -247,6 +248,80 @@ function DSA() {
 
           </div>
         </div>
+
+        <div className="mt-12 grid w-1/2 mx-auto md:grid-cols-3 gap-6">
+
+          <div className="group relative  rounded-xl overflow-hidden">
+
+            <div className="absolute inset-0 opacity-0  group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 blur-xl"></div>
+
+            <div className="relative rounded-xl h-full bg-white/5 backdrop-blur-xl border border-white/10 p-6 
+      transition-all duration-300 group-hover:scale-[1.04]">
+
+              <p className="text-yellow-400 font-semibold text-sm mb-2 flex items-center gap-2">
+                🏆 Achievement
+              </p>
+
+              <p className="text-white text-sm leading-relaxed">
+                Secured{" "}
+                <span className="text-blue-400 font-semibold">Knight Badge</span>{" "}
+                on LeetCode with rating{" "}
+                <span className="text-green-400 font-semibold">1866</span>.
+              </p>
+
+              {/* subtle shine */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer"></div>
+            </div>
+          </div>
+
+          <div className="group relative rounded-xl overflow-hidden">
+
+            <div className="absolute inset-0 opacity-0  group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-purple-500/20 to-blue-500/20 blur-xl"></div>
+
+            <div className="relative rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 p-6 h-full
+      transition-all duration-300 group-hover:scale-[1.04]">
+
+              <p className="text-purple-400 font-semibold text-sm mb-2 flex items-center gap-2">
+                🧪 Contribution
+              </p>
+
+              <p className="text-white text-sm leading-relaxed">
+                Contributed a test case on LeetCode.
+              </p>
+
+              <button className="mt-3 text-blue-400 text-sm flex items-center gap-1 hover:gap-2 transition cursor-pointer hover:text-white" onClick={() => window.open("https://www.linkedin.com/posts/devanshdubey18_leetcode-problemsolving-dsa-activity-7310806227679072257-ducS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9tIIcBQJxRsIeonrUapZMpJC7DuviRFQI", "_blank")}>
+                View More
+                <ArrowUpRight className="w-4 h-4" />
+              </button>
+
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer"></div>
+            </div>
+          </div>
+
+          <div className="group relative rounded-xl overflow-hidden">
+
+            <div className="absolute inset-0 opacity-0 h-full group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-green-400/20 to-emerald-500/20 blur-xl"></div>
+
+            <div className="relative rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 p-6 h-full
+      transition-all duration-300 group-hover:scale-[1.04]">
+
+              <p className="text-green-400 font-semibold text-sm mb-2 flex items-center gap-2">
+                📊 Practice
+              </p>
+
+              <p className="text-white text-sm leading-relaxed">
+                Solved over{" "}
+                <span className="text-blue-400 font-semibold">800+</span> DSA questions.
+              </p>
+
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer"></div>
+            </div>
+          </div>
+
+        </div>
+
+
+
       </motion.div>
     </>
   );
